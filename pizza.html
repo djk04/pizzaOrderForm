@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="firstForm">
+    <h1>Pizza Order Form</h1>
+    <section class="size">
+      <form class="form1">
+        <label>Size:</label>
+        <input class="slider" type="range" min="1" max="4" value="1" id="slider" />
+        <span id="pizzasize">Small</span><span>$</span><span id="price">6</span>
+        <img
+        id="image"
+          class="pizzaImg"
+          src="pizza.png"
+        />
+      </form>
+    </section>
+    
+    <form class="form1">
+      <fieldset class="toppings" id="meat">
+        <legend class="top">Meat Toppings (+2$ for each)</legend>
+        <input type="checkbox" id="option1" name="Pepperoni" />
+        <label for="option1">Pepperoni</label><br />
+        <input type="checkbox" id="option2" name="Sausage" />
+        <label for="option2">Sausage</label><br />
+        <input type="checkbox" id="option3" name="Ground Beef" />
+        <label for="option3"> Ground Beef</label><br />
+        <input type="checkbox" id="option4" name="Anchovy" />
+        <label for="option4"> Anchovy</label><br />
+        <input type="checkbox" id="option5" name="Chicken" />
+        <label for="option5"> Chicken</label><br />
+      </fieldset>
+    </form class="form1">
+    <form>
+      <fieldset class="toppings" id="Veggies">
+        <legend class="top">Veggies(+1$ for each)</legend>
+        <input type="checkbox" id="op1" name="Tomatoes" />
+        <label for="op1">Tomatoes</label><br />
+        <input type="checkbox" id="op2" name="Onions" />
+        <label for="op2">Onions</label><br />
+        <input type="checkbox" id="op3" name="Olives" />
+        <label for="op3"> Olives</label><br />
+        <input type="checkbox" id="op4" name="Mushrooms" />
+        <label for="op4"> Mushrooms</label><br />
+        <input type="checkbox" id="op5" name="Pineapple" />
+        <label for="op5"> Pineapple</label><br />
+        <input type="checkbox" id="op6" name="Spinach" />
+        <label for="op6"> Spinach</label><br />
+        <input type="checkbox" id="op7" name="Jalapeno" />
+        <label for="op7"> Jalapeno</label><br />
+      </fieldset>
+    </form>
+    <form class="form1">
+      <fieldset class="toppings" id="cheese">
+        <legend class="top">Cheese</legend>
+        <input type="radio" id="cheese" name="op1" value="Reg"/>
+        <label for="op1">Regular Cheese</label><br />
+        <input type="radio" id="nocheese" name="op1" value="no" />
+        <label for="op1">No Cheese</label><br />
+        <input type="radio" id="extracheese" name="op1" value="extra"/>
+        <label for="op1"> Extra Cheese (3$)</label><br />
+      </fieldset>
+    </form>
+    <form>
+      <fieldset class="toppings">
+        <legend class="top">Payment</legend>
+        <input type="radio" id="cheese" name="pay" />
+        <label for="pay">Cash</label>
+        <input type="radio" id="nocheese" name="pay" />
+        <label for="pay">MasterCard</label>
+        <input type="radio" id="extracheese" name="pay" />
+        <label for="pay"> Visa</label>
+
+      </fieldset>
+      <button type="button" id="button1" onclick="goToPage(1)">Next</button>
+    </form>
+  </div>
+
+    <form class="addressForm" id="secondForm" action="" method="get" name="testForm" onsubmit="checkInfo()">
+     <label class="inputLabel">First Name:</label><br />
+      <input for="firstname" type="text" class="input" id="firstname"/><br />
+      <label class="inputLabel" >Last Name:</label><br />
+      <input for="lastname" type="text" class="input" id="lastname" /><br />
+      <label class="inputLabel">E-mail:</label><br />
+      <input for = "email"type="email" class="input" id="mail" /><br />
+      <label   id = "phoneNumber"class="inputLabel">Phone Number:</label><br />
+      <input type="text" for = "phoneNumber" class="input" id="pnumber"/><br />
+      <select class="input" for="dropdown" id="select" name="dropdown">
+        <option selected >--Please choose an option--</option>
+        <option>Beirut</option>
+        <option>Batroun</option>
+        <option>Byblos</option>
+      </select>
+      <label>Address</label>
+      <br />
+      <textarea cols="100" rows="5" class="input" id="address" for="address"> </textarea>
+      <button id="button2" onclick="goToPage(2)">Back</button>
+      <button type="button" id="button3" onclick="buttoncheck()">Next</button>
+    </form>
+<div id="thirdForm">
+    <div id="OrderSummary"> <h1>Order Summary</h1>
+        <h2>Deliver to</h2>
+        <p id="dlvrTo"></p>
+        <h2>Order</h2>
+        <ul id="orderList"></ul>
+        <h2 id="total">Total</h2>
+        <button type="button" id = "button4" onclick="goToPage(4)">Back</button>
+        </div>
+    </div>
+        <script src="script.js"></script>
+  </body>
+</html>

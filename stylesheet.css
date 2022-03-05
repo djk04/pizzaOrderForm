@@ -1,0 +1,86 @@
+h1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+label {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.size {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.pizzaImg {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 20px;
+}
+.toppings {
+  padding: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.top {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+.addressForm {
+  padding: 20px;
+  margin: 0 300px;
+}
+#firstForm{
+  display: block;
+}
+#secondForm{
+    background-color: #e93a57;
+    display: none;
+}
+#thirdForm{
+    background-color: #3fc38e;
+    display: none;
+}
+.button1{
+    margin: 20px;
+}
+.input {
+  padding: 10px;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.inputLabel {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+.inputLabel2 {
+  /* padding: 50px;
+      border: 0;
+      border-radius: 6px;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      margin-right: 400px; */
+}
+#OrderSummary {
+  width: 50vw;
+  margin-left: 25vw;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: green;
+  border-style: solid;
+  border-width: thick;
+  background-color: #ffffff;
+}
+body{
+  background-color: #01dddd;
+}
